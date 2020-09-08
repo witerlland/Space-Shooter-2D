@@ -44,7 +44,7 @@ public class GameController : MonoBehaviour
         PlayerLifeTxt.GetComponent<UnityEngine.UI.Text>().text = "Life: " + playerLife.ToString();
 
         if(playerLife <= 0){
-            SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene("GameStart");
         }
     }
 }
