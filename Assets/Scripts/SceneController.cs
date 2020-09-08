@@ -8,4 +8,8 @@ public class SceneController : MonoBehaviour
     public void retryGame(string SceneName){
         SceneManager.LoadScene(SceneName);
     }
+
+    public void closegame(){
+        Application.Quit();
+    }
 }
