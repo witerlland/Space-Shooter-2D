@@ -7,6 +7,10 @@ public class SceneController : MonoBehaviour
 {
     public void retryGame(string SceneName){
         SceneManager.LoadScene(SceneName);
+
+        if(Time.timeScale == 0){
+            Time.timeScale = 1;
+        }
     }
 
     public void closegame(){
